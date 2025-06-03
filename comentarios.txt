@@ -15,3 +15,15 @@ docker rm eajmysql
 
 -- verificar
 docker ps -a
+
+-- esto de arriba es para el contenedor donde esta mysql
+
+-- esto de abajo es para construir el contendor del proyecto
+
+-- crear jar
+mvn clean package
+
+-- ejecutar el docker compuse
+docker-compose up
+
+--
