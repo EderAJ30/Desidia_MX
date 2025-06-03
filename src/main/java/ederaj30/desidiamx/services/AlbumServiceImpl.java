@@ -13,8 +13,13 @@ import java.util.Optional;
 public class AlbumServiceImpl implements AlbumService{
 
     @Autowired
-    private AlbumRepository albumRepository;
-    private AlbumMapper albumMapper;
+    private final AlbumRepository albumRepository;
+    private final AlbumMapper albumMapper;
+
+    public AlbumServiceImpl(AlbumRepository albumRepository, AlbumMapper albumMapper) {
+        this.albumRepository = albumRepository;
+        this.albumMapper = albumMapper;
+    }
 
     @Override
     public Album crearAlbum(Album album) {
@@ -36,7 +41,6 @@ public class AlbumServiceImpl implements AlbumService{
         Optional<Album> albumActual = albumRepository.findById(idAlbum);
         if (albumActual.isPresent()) {
             Album tmp = albumActual.get();
-            tmp.setIdAlbum(album.getIdAlbum());
             tmp.setArtista(album.getArtista());
             tmp.setCoverUrl(album.getCoverUrl());
             tmp.setGenero(album.getGenero());
@@ -50,7 +54,8 @@ public class AlbumServiceImpl implements AlbumService{
 
     @Override
     public Album actualizarParcialAlbum(Integer idAlbum, AlbumUpdateDto dto) {
-        Album album = albumRepository.findById(idAlbum).orElseThrow(() -> new RuntimeException("Venta no encontrada"));
+        Album album = albumRepository.findById(idAlbum)
+                .orElseThrow(() -> new RuntimeException("album no encontrada"));
         albumMapper.updateAlbumFromDto(dto, album);
         return albumRepository.save(album);
     }

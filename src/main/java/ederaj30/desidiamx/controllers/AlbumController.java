@@ -1,5 +1,6 @@
 package ederaj30.desidiamx.controllers;
 
+import ederaj30.desidiamx.dtos.AlbumUpdateDto;
 import ederaj30.desidiamx.entities.Album;
 import ederaj30.desidiamx.services.AlbumService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,11 @@ public class AlbumController {
     @PutMapping("/{id}")
     public ResponseEntity<Album>updateAlbum(@PathVariable Integer id, @RequestBody Album album) {
         return new ResponseEntity<>(albumService.actualizarAlbum(id, album), HttpStatus.OK);
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<Album> patchAlbum(@PathVariable Integer id, @RequestBody AlbumUpdateDto album) {
+        return new ResponseEntity<>(albumService.actualizarParcialAlbum(id, album), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
