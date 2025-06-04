@@ -1,0 +1,10 @@
+ederaj30/desidiamx/entities/Album.class
+ederaj30/desidiamx/excepciones/GlobalExceptionHandler.class
+ederaj30/desidiamx/controllers/AlbumController.class
+ederaj30/desidiamx/services/AlbumService.class
+ederaj30/desidiamx/dtos/AlbumUpdateDto.class
+ederaj30/desidiamx/mappers/AlbumMapper.class
+ederaj30/desidiamx/mappers/AlbumMapperImpl.class
+ederaj30/desidiamx/services/AlbumServiceImpl.class
+ederaj30/desidiamx/DesidiamxApplication.class
+ederaj30/desidiamx/repositories/AlbumRepository.class

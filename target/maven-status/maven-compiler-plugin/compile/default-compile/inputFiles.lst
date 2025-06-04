@@ -1,0 +1,9 @@
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/dtos/AlbumUpdateDto.java
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/services/AlbumService.java
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/entities/Album.java
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/excepciones/GlobalExceptionHandler.java
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/DesidiamxApplication.java
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/mappers/AlbumMapper.java
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/repositories/AlbumRepository.java
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/controllers/AlbumController.java
+/home/ederaj30/Descargas/DOCKEEEEEEEEEER/Desidia_MX/src/main/java/ederaj30/desidiamx/services/AlbumServiceImpl.java
